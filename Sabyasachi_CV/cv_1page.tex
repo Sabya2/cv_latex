@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+% packages for image and circular clipping of the image
+% \usepackage{picins}
+\usepackage{graphicx} 
+\usepackage{fontawesome5}
+
+
+% \newcommand{\profilepicpath}{/images/Profile_photo.pdf} % Replace with your image path
+
+
+\begin{document}
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\hspace{0.5cm}
+\vspace{-2cm}
+\begin{minipage}[h]{0.25\textwidth} % Adjust width as needed
+    % \centering
+    % \hspace{-0.5cm}
+    % \vspace{-2cm} 
+    \includegraphics[width=2.5cm,height=3cm]{images/Profile_photo.JPG}
+\end{minipage}
+
+\hfill
+
+\hspace{4cm}
+% \vspace{-1cm}
+\begin{minipage}[t]{0.7\textwidth}
+    \namesection
+    {\bf Sabyasachi}
+    {\bf Chakrabarty}
+    { % Your name profile or other web address add website eventually
+        \hspace{-0.5cm} -Aspiring Data Scientist, motivated to solve real world problem utilising Data\\
+        \faEnvelope \hspace{1pt} \href{mailto:sabyasachichakrbarty.96@gmail.com}{sabyasachichakrabarty}
+        \hspace{3pt} \faMobile \hspace{1pt} +4917628308246
+        \hspace{3pt} \faMapMarker \hspace{1pt} {Göttingen, Germany}
+        }
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+\faPython \hspace{1pt} Python, iPython Notebook \\
+Basic level C and PowerBI\\
+\faDatabase \hspace{1pt} SQL, DataJoint \\
+Git, slurm 
+
+\sectionspace % Some white space after the section
+\subsection{Data Science}
+Exploration, Visualisation, Analysis\\
+NumPy, Pandas, Scikit-learn \\
+Regression, SVM \\
+KNN, Decision Trees \\
+Computer vision, Pytorch\\
+Image Analysis, Signal processing
+
+\sectionspace % Some white space after the section
+\subsection{Soft Skills}
+Research Insight\\
+Good Communication, Presentation\\
+Team Player
+
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+\sectionspace
+\section{Education} 
+
+\subsection{M.Sc - Applied Data Science}
+\descript{Göttingen University, Germany}
+\location{2022-Present} 
+Thesis: %\href{ add the git hub page}
+{\bf Deep Learning based Profiling of Microscopic Embryonic heart tissues}\\
+Relevant Courses: {\bf Machine Learning,\\
+Deep Learning in computer vision,\\ 
+Statistical Inference}
+
+
+\sectionspace % Some white space after the section
+\subsection{M.Sc - Biotechnology}
+\descript{Indian Institute of Technology}
+\location{Grades: 90\% | 2017-'19| Mumbai, India}
+Thesis: \href{https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-0042-1755497}{\bf Developed Noninvasive Gold Coated Photothermal Nano Particles for cancer therapy}
+
+\sectionspace % Some white space after the section
+\subsection{B.Sc - Microbiology (Hons)}
+\descript{University of Calcutta}
+\location{Grades: 72\% | 2014-'17| Kolkata, India}
+
+
+
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+\faGithub \hspace{2pt} Github/\href{https://github.com/Sabya2}{\bf sabya2} \\
+\faKaggle \hspace{2pt} Kaggle/\href{https://www.kaggle.com/sabyasachi96}{\bf sabyasachi96}\\
+\faLinkedin \hspace{2pt} LinkedIn/ \href{https://www.linkedin.com/in/sabyasachi-chakrabarty/}{\bf sabyasachi-chakrabarty} \\
+\faTwitterSquare \hspace{2pt} Twitter/ \href{https://twitter.com/sabya_sachi0}{\bf sabya-sachi} \\
+
+
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.62\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\subsection{Working Student} 
+\begin{tightitemize}
+
+    % gwdg
+    \item{
+        \vspace{\topsep} % Hacky fix for awkward extra vertical space
+        % \runsubsection{\href{https://github}{Research Assistant - GWDG}}
+        % \runsubsection{Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG)}
+        \runsubsection{GWDG}
+        % \descript{}
+        \location{| Research Assistant\\ Data Transfer Analytics\\ May 2023 – present | Göttingen, Germany}
+            \begin{tightitemize}
+                \item Developed a {\bf Python-based machine learning} data analysis pipeline to benchmark transfer performance between different compute clusters
+                \item Developed {\bf openMPI-based C code} for efficient large data packet transfer between compute clusters using {\bf SLURM} Workload Manager
+            \end{tightitemize}
+        }
+    % umg
+    \item{ 
+        \vspace{\topsep}
+        % \runsubsection{\href{https://github}{Research Assistant - UMG}}
+        \runsubsection{University Medical Göttingen}
+        \location{| Research Assistant\\ Patient Medical Data Analytics\\ Apr 2023 – Dec 2023 | Göttingen, Germany}
+        % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+            \begin{tightitemize}
+                \item Established and managed a {\bf medical patient SQL database} of {\bf eICU} and {\bf MIMIC-III} data using {\bf DataJoint, Docker containers}.
+                \item Developed a {\bf machine learning preprocessing pipeline} to extract features suitable to support Clinical Decision Support Systems (CDSS) for ventilation management
+            \end{tightitemize}
+        }
+    % neuroLab
+    \item{ 
+        \vspace{\topsep}
+        % \runsubsection{\href{https://github}{Research Assistant - Neuro}}
+        \runsubsection{Behaviourial Neurobiology Dept}
+        \location{| Student Assistant \\ Neural response Analysis\\ Dec 2022 – Apr 2023 | Göttingen, Germany}
+        % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+            \begin{tightitemize}
+                \item Built a data science pipeline for analyzing fluorescent neural images to extract neuronal excitation signals through signal processing
+            \end{tightitemize}
+        }
+\end{tightitemize}
+
+% leo burnett
+\sectionspace % Some white space after the section
+\subsection{Creative Technologist}
+\location{Member of Apollo-11, Leo Burnett India \\ Jul 2019 – Feb 2022}
+\begin{tightitemize}
+    \item Contributed to Apollo-11, Leo Burnett's innovation cell, by developing data-driven solutions, reports for creative projects across various industries
+    \item Developed and executed 5+ data-driven scientific ideas for product showcases, collaborating effectively with R\&D teams on concept development and implementation
+\end{tightitemize}
+
+
+\section{Publications}
+
+\begin{tightitemize}
+    \vspace{\topsep}
+    \item {\href{https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-0042-1755497}{
+        {\bf Conference Paper} 
+        (Aug-2022):  Noninvasive Imaging-Guided In Vivo Estimation of Photothermal Therapy Using Cancer-Targeted Gold-Solid-Lipid Nanomaterial}}
+    \vspace{\topsep}
+    \item {\href{https://pubmed.ncbi.nlm.nih.gov/33540007/}{
+        {\bf Research Paper} 
+        (Feb-2021):  pH-responsive delivery of anti-metastatic niclosamide using mussel-inspired polydopamine nanoparticles}}
+\end{tightitemize}
+
+\sectionspace % Some white space after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

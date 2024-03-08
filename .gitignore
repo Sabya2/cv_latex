@@ -1,0 +1,7 @@
+# ignoring all the pdf files and images files 
+*.tiff
+*.tif
+*.png
+*.jpg
+*.jpeg
+*.pdf
