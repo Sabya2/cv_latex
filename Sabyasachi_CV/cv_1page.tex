@@ -25,7 +25,12 @@
 % \usepackage{picins}
 \usepackage{graphicx} 
 \usepackage{fontawesome5}
+% \usepackage{sectsty}
+% \usepackage{titlecaps}
+% \sectionfont{\titlecap}
 
+
+% \allsectionsfont{\titlecap}
 
 % \newcommand{\profilepicpath}{/images/Profile_photo.pdf} % Replace with your image path
 
@@ -79,7 +84,7 @@
 \section{Skills}
 
 \subsection{Programming}
-\faPython \hspace{1pt} Python, iPython Notebook \\
+\faPython \hspace{1pt} Python, Jupyter Notebook \\
 Basic level C and PowerBI\\
 \faDatabase \hspace{1pt} SQL, DataJoint \\
 Git, slurm 
@@ -91,12 +96,11 @@ NumPy, Pandas, Scikit-learn \\
 Regression, SVM \\
 KNN, Decision Trees \\
 Computer vision, Pytorch\\
-Image Analysis, Signal processing
+Medical Image Analysis, Signal processing
 
 \sectionspace % Some white space after the section
 \subsection{Soft Skills}
-Research Insight\\
-Good Communication, Presentation\\
+Scientific Communication, Presentation\\
 Team Player
 
 
@@ -107,25 +111,27 @@ Team Player
 \section{Education} 
 
 \subsection{M.Sc - Applied Data Science}
-\descript{Göttingen University, Germany}
-\location{2022-Present} 
-Thesis: %\href{ add the git hub page}
-{\bf Deep Learning based Profiling of Microscopic Embryonic heart tissues}\\
-Relevant Courses: {\bf Machine Learning,\\
+\descript{University of Göttingen, Germany}
+\hfill \location{Grade: 2.3 | 2022-Present} 
+\\Thesis: %\href{ add the git hub page} 
+{\bf Deep Learning based Profiling of Microscopic Embryonic heart tissues}
+\vspace{0.5\topsep}
+\\Relevant Courses: {\bf Machine Learning,\\
 Deep Learning in computer vision,\\ 
 Statistical Inference}
 
-
+\vspace{0.5\topsep}
 \sectionspace % Some white space after the section
 \subsection{M.Sc - Biotechnology}
-\descript{Indian Institute of Technology}
-\location{Grades: 90\% | 2017-'19| Mumbai, India}
+\descript{Indian Institute of Technology,\\ Bombay, India}
+\vspace{-0.7\topsep}
+\hfill \location{Grade: 90\% | 2017-'19}
 Thesis: \href{https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-0042-1755497}{\bf Developed Noninvasive Gold Coated Photothermal Nano Particles for cancer therapy}
 
 \sectionspace % Some white space after the section
 \subsection{B.Sc - Microbiology (Hons)}
-\descript{University of Calcutta}
-\location{Grades: 72\% | 2014-'17| Kolkata, India}
+\descript{University of Calcutta, India}
+\hfill \location{Grade: 72\% | 2014-'17}
 
 
 
@@ -156,53 +162,58 @@ Thesis: \href{https://www.thieme-connect.com/products/ejournals/abstract/10.1055
 % Experience
 %------------------------------------------------
 
-\section{Experience}
+\section{Work Experience}
 
-\subsection{Working Student} 
+\subsection{Research Assistant}
+\descript{GWDG | Data Transfer Analytics}
+\vspace{-0.5\topsep} \hfill \location{Göttingen, Germany | May 2023 – present}
+\vspace{1\topsep}
+\begin{tightitemize} %{tightitemize}
+    \item Developed a {\bf Python-based machine learning} data analysis pipeline to benchmark transfer performance between different compute clusters
+    \item Developed {\bf openMPI-based C code} for efficient large data packet transfer between compute clusters using {\bf SLURM} Workload Manager
+\end{tightitemize} %{tightitemize}
+
+
+
+\sectionspace
+\subsection{Research Assistant}
+\descript{University Medical Göttingen | Patient Medical Data Analytics}
+\hfill \location{Göttingen, Germany | Apr 2023 – Dec'23}
+\vspace{-0.2\topsep}
 \begin{tightitemize}
-
-    % gwdg
-    \item{
-        \vspace{\topsep} % Hacky fix for awkward extra vertical space
-        % \runsubsection{\href{https://github}{Research Assistant - GWDG}}
-        % \runsubsection{Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG)}
-        \runsubsection{GWDG}
-        % \descript{}
-        \location{| Research Assistant\\ Data Transfer Analytics\\ May 2023 – present | Göttingen, Germany}
-            \begin{tightitemize}
-                \item Developed a {\bf Python-based machine learning} data analysis pipeline to benchmark transfer performance between different compute clusters
-                \item Developed {\bf openMPI-based C code} for efficient large data packet transfer between compute clusters using {\bf SLURM} Workload Manager
-            \end{tightitemize}
-        }
-    % umg
-    \item{ 
-        \vspace{\topsep}
-        % \runsubsection{\href{https://github}{Research Assistant - UMG}}
-        \runsubsection{University Medical Göttingen}
-        \location{| Research Assistant\\ Patient Medical Data Analytics\\ Apr 2023 – Dec 2023 | Göttingen, Germany}
-        % \vspace{\topsep} % Hacky fix for awkward extra vertical space
-            \begin{tightitemize}
-                \item Established and managed a {\bf medical patient SQL database} of {\bf eICU} and {\bf MIMIC-III} data using {\bf DataJoint, Docker containers}.
-                \item Developed a {\bf machine learning preprocessing pipeline} to extract features suitable to support Clinical Decision Support Systems (CDSS) for ventilation management
-            \end{tightitemize}
-        }
-    % neuroLab
-    \item{ 
-        \vspace{\topsep}
-        % \runsubsection{\href{https://github}{Research Assistant - Neuro}}
-        \runsubsection{Behaviourial Neurobiology Dept}
-        \location{| Student Assistant \\ Neural response Analysis\\ Dec 2022 – Apr 2023 | Göttingen, Germany}
-        % \vspace{\topsep} % Hacky fix for awkward extra vertical space
-            \begin{tightitemize}
-                \item Built a data science pipeline for analyzing fluorescent neural images to extract neuronal excitation signals through signal processing
-            \end{tightitemize}
-        }
+    \item Established and managed a {\bf medical patient SQL database} of {\bf eICU} and {\bf MIMIC-III} data using {\bf DataJoint, Docker containers}.
+    \item Developed a {\bf machine learning preprocessing pipeline} to extract features suitable to support Clinical Decision Support Systems (CDSS) for ventilation management
 \end{tightitemize}
+
+
+\sectionspace
+\subsection{Research Assistant}
+\descript{Behaviourial Neurobiology Department | Neural response Analysis}
+\hfill \location{Göttingen, Germany | Dec 2022 – Apr'23}
+\vspace{-0.2\topsep}
+\begin{tightitemize}
+    \item Developed a {\bf data science pipeline} for analyzing fluorescent neural images of fruit-fly brain
+    \item Isolated neuronal excitation signals for downstream signal analysis 
+\end{tightitemize}
+
+
+
+\sectionspace
+\subsection{Data Analyst, Community Volunteer}
+\descript{Chezuba | Volunteering Forum}
+\hfill \location{Remote | Nov 2020 – present}
+\vspace{-0.2\topsep}
+\begin{tightitemize}
+    \item Performed Data Analysis, created Dashboards for projects on Social cause
+\end{tightitemize}
+
 
 % leo burnett
 \sectionspace % Some white space after the section
 \subsection{Creative Technologist}
-\location{Member of Apollo-11, Leo Burnett India \\ Jul 2019 – Feb 2022}
+\descript{Member of Apollo-11, Leo Burnett India}
+\hfill \location{Mumbai, India | Jul 2019 – Feb'22}
+\vspace{-0.2\topsep}
 \begin{tightitemize}
     \item Contributed to Apollo-11, Leo Burnett's innovation cell, by developing data-driven solutions, reports for creative projects across various industries
     \item Developed and executed 5+ data-driven scientific ideas for product showcases, collaborating effectively with R\&D teams on concept development and implementation
@@ -212,17 +223,22 @@ Thesis: \href{https://www.thieme-connect.com/products/ejournals/abstract/10.1055
 \section{Publications}
 
 \begin{tightitemize}
-    \vspace{\topsep}
+    \vspace{0.5\topsep}
     \item {\href{https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-0042-1755497}{
         {\bf Conference Paper} 
         (Aug-2022):  Noninvasive Imaging-Guided In Vivo Estimation of Photothermal Therapy Using Cancer-Targeted Gold-Solid-Lipid Nanomaterial}}
-    \vspace{\topsep}
+    \vspace{0.5\topsep}
     \item {\href{https://pubmed.ncbi.nlm.nih.gov/33540007/}{
         {\bf Research Paper} 
         (Feb-2021):  pH-responsive delivery of anti-metastatic niclosamide using mussel-inspired polydopamine nanoparticles}}
 \end{tightitemize}
 
 \sectionspace % Some white space after the section
+\section{Language}
+\vspace{\topsep}
+\begin{tightitemize}
+    \item English; Hindi; Bengali; German(A1)
+\end{tightitemize}
 
 %----------------------------------------------------------------------------------------
 
